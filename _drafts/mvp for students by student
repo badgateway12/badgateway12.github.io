@@ -56,42 +56,38 @@
 Вот какие заметки получились у студентов, воссоздающих стандартное приложение Калькулятор ОС Windows
 
 IView
-event EventHandler<SomeType> OperandPressed;
-event EventHandler<SomeType> OperatorPressed;
+event EventHandler<SomeType> Digit2Pressed;
+event EventHandler<SomeType> SomethingElsePressed;
+...
 UpdateOperand(string value);
 UpdateExpression(string value);
 ...
 
 IModel
-event EventHandler<YourType> OperandChanged;
-event EventHandler<YourType> ExpressionChanged;
-Operand{get;}
-Expression{get;}
+event EventHandler<SomeType> OperandChanged;
+event EventHandler<SomeType> ExpressionChanged;
+string Operand{get;}
+string Expression{get;}
+Appendvalue(string value);
 ...
 
 Пользователь взаимодействует с Представлением(1). Презентер, получивший ссылку на реализацию интерфейса, подписывается на события Представления и по запросу изменяет Модель(2). Когда и если в Модели что-то меняется, она уведомляет об этом Презентера(3), который вызывает соответствующий метод обновления у Представления(4).
 
-1. View : IVew
-public event EventHandler<Operand> OperandPressed;
-...
-private void OnDigit2Clicked(object sender, EventArgs e)
+1. View
+private void OnDigit2Pressed(object sender, EventArgs e)
 {
-OperandPressed?.Invoke(this, new Operand("2"));
+Digit2Pressed?.Invoke(this, new SomeType("2"));
 }
-...
 
 2. Presenter
-...
-private void View_OperandPressed(object sender, OperandPressed args)
+private void View_Digit2Pressed(object sender, SomeType args)
 {
 if (args == null) return;
-_model.AppendOperand(args.Value);
+_model.AppendValue(args.Value);
 }
-...
 
-3. Model : IModel
-...
-public event EventHandler<Operand> OperandChanged;
+3. Model
+
 public string Operand
 {
 get => _backingField;
@@ -101,21 +97,18 @@ _backingField = value;
 OnOperandChanged();
 }
 }
-...
 
 private void OnOperandChanged()
 {
-OperandChanged?.Invoke(this, new Operand("2"));
+OperandChanged?.Invoke(this, new SomeType());
 }
-...
 
 6. Presenter
-...
-private void Model_OperandChanged(object sender, Operand args)
+private void Model_OperandChanged(object sender, SomeType args)
 {
 if (args == null) return;
-_view.UpdateOperand(args.Value);
+_view.UpdateOperand(_model.Operand);
 }
-...
+
 
 P.S. Все герои вымышлены, полное или частичное сходство является совпадением.
