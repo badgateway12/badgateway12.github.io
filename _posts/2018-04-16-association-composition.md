@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+title: Association vs Composition. Exploring the difference.
 ---
 Навеяно дискуссиями в группе...
 
