@@ -48,10 +48,8 @@ title: Association vs Composition. Exploring the difference.
 *Саша.* Надеюсь, что когда дойдет до реального проекта, мое моделирование Ассоциациями окажется на высоте.
 
 
-(1)
 ```c#
-
-Тип отношений Has-A
+(1) Тип отношений Has-A
 
 public class BloodSystem
 {
@@ -77,10 +75,9 @@ Body body = new Body(new BloodSystem() );
 ```
 
 
-(2)
 ```c#
 
-Тип отношений Part-Of
+(2) Тип отношений Part-Of
 
 public class BloodСell
 {
