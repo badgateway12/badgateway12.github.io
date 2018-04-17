@@ -59,7 +59,7 @@ Body body = new Body(new BloodSystem() );
 *Даша.* Помните, Пол нам говорил, что экземпляр дочернего объекта жестко закодирован внутри родительского.
 
 ```c#
-public class BloodСell
+public class BloodCell
 {
     ...
 }
@@ -67,12 +67,12 @@ public class BloodСell
 public class BloodSystem
 
 {
-    BloodСell bodyPart = new BloodСell();
+    BloodСell bodyPart = new BloodCell();
     ...
 }
 ```
 
-*Маша.* Оно самое. Отсюда вытекает, что BloodСell одновременно может быть частью только BloodSystem.
+*Маша.* Оно самое. Отсюда вытекает, что BloodCell одновременно может быть частью только BloodSystem.
 
 *Даша.* И еще отсюда вытекает, что логически Целое не может быть создано без Части.
 
