@@ -29,7 +29,7 @@ title: Association vs Composition. Exploring the difference.
 
 *Даша.* Более того, один и тот же объект BloodSystem может быть использован для изучения как male Body, так и female Body.
 
-*Маша.* Поэтому BloodSystem можно создать вне Body, и при уничтожении Body (сборщик мусора) BloodSystem вполне себе может существовать. Отношения Агрегации сводятся к концепции USING. Такой тип отношений между объектами называют "WEAK relationship". И зависимость, как правило, внедряется через конструктор, или сеттер. 
+*Маша.* Поэтому BloodSystem можно создать вне Body, и при уничтожении Body (сборщик мусора) BloodSystem вполне себе может существовать. Отношения Агрегации сводятся к концепции USING. Такой тип отношений между объектами называют WEAK RELATIONSHIP. И зависимость, как правило, внедряется через конструктор, или сеттер. 
 ```c#
 public class BloodSystem
 {
@@ -54,7 +54,7 @@ Body body = new Body(bloodSystem);
 Body body = new Body(new BloodSystem() );
 ```
 
-А Композиция - это как бы способ объединить несколько типов в более сложный тип. Отношения объектов при композиции еще называют DEATH relationship.  Например, BloodSystem и BloodСell. BloodSystem управляет жизненным циклом BloodСell, т.е. при уничтожении BloodSystem (сборщик мусора) BloodСell ожидает та же участь. Такой тип отношений сводится к концепции "STRONG relationship".
+А Композиция - это как бы способ объединить несколько типов в более сложный тип. Отношения объектов при композиции еще называют death relationship.  Например, BloodSystem и BloodCell. BloodSystem управляет жизненным циклом BloodCell, т.е. при уничтожении BloodSystem (сборщик мусора) BloodСell ожидает та же участь. Такой тип отношений сводится к концепции STRONG RELATIONSHIP.
 
 *Даша.* Помните, Пол нам говорил, что экземпляр дочернего объекта жестко закодирован внутри родительского.
 
@@ -67,7 +67,7 @@ public class BloodCell
 public class BloodSystem
 
 {
-    BloodСell bodyPart = new BloodCell();
+    BloodCell bodyPart = new BloodCell();
     ...
 }
 ```
