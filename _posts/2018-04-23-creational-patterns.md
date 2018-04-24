@@ -124,7 +124,7 @@ creator.CreateSomeType();
 public class Elf
 {
     public int Power { get; } = 100;
-    public int Health { get; } = 100
+    public int Health { get; } = 100;
     public Weapon Weapon { get; set; }
 
     public Elf Clone()
@@ -137,7 +137,7 @@ public class Elf
 ```c#
 Elf elf = new Elf(); // Прототип
 Elf pixi = elf.Clone();
-pixiClone.Weapon = WeaponforPixi;
+pixi.Weapon = WeaponforPixi;
 Elf arbalester = elf.Clone();
 arbalester.Weapon = WeaponforArbalester;
 ```
