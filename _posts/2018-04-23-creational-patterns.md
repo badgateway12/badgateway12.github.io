@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: Be sure to know who is responsible for creation of your objects.
 ---
