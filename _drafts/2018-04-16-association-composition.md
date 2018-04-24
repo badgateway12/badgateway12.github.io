@@ -86,4 +86,4 @@ public class BloodSystem
     BloodСell bodyPart = new BloodСell();
 }
 ```
-
+> Все герои вымышлены, полное или частичное сходство является совпадением.
