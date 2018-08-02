@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+title: You are a cool learning doping, Mr. Git.
 ---
 ### Студенты, изучающие Git, или прерванный полет
 
