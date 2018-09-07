@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Навеяно дискуссиями в группе...
 
