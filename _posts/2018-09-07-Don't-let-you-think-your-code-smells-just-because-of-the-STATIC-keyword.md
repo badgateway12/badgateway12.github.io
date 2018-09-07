@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Don't let you think your code smells just because of the *static* keyword
+title: Don't let you think your code smells just because of the keyword STATIC
 ---
 
 Навеяно дискуссиями в группе...
