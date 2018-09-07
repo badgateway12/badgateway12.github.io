@@ -1,6 +1,9 @@
 ---
 published: true
+layout: post
+title: Don't let you think your code smells just because of the **static** keyword
 ---
+
 Навеяно дискуссиями в группе...
 
 *Саша.* Народ, мое приложение требует статический класс, а я не хочу делать класс статическим. Как же быть?
