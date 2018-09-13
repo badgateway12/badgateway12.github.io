@@ -3,6 +3,7 @@ published: true
 layout: post
 title: The psychology of design patterns: where problem and solution overlap
 ---
+
 Навеяно дискуссиями в группе...
 
 *Саша.* Я тут кропотал над Декоратором, постигал Лекговеса, докапывался до сути Компоновщика, осмысливал
