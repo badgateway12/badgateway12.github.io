@@ -47,7 +47,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-  text-align: center;
   a {
     color: inherit;
   }
@@ -55,7 +54,6 @@ h1 {
 
 h2 {
   font-size: 24px;
-  text-align: center;
 }
 
 h3 {
@@ -262,6 +260,10 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   .comments {
