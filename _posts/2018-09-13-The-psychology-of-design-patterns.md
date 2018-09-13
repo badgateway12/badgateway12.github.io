@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Don't let you think your code smells just because of the keyword STATIC
+title: The psychology of design patterns&#58; where problem and solution overlap
 ---
 
 Навеяно дискуссиями в группе...
