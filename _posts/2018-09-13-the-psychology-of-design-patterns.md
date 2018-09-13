@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## The psychology of design patterns: where problem and solution overlap
 
