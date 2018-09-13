@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 title: The psychology of design patterns: where problem and solution overlap
 ---
 
