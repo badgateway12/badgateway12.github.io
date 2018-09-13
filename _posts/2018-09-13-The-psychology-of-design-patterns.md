@@ -1,5 +1,6 @@
 ---
 published: true
+title: The psychology of design patterns: where problem and solution overlap
 ---
 Навеяно дискуссиями в группе...
 
