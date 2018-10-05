@@ -237,30 +237,25 @@ public class Employee
 public class PayrollDepartment
 {
     private readonly IEnumerable<Employee> _employees;
-    public PayrollTerminal PayrollTerminals { get; set; }
+    public PayrollTerminal PayrollTerminals { get; }
 
     public PayrollDepartment(IEnumerable<Employee> employees)
     {
         _employees = employees;
-    }
-
-    public void SetUpTerminals()
-    {
-            PayrollTerminals = new Weekly(
-                                new Monthly(
-                                 new Salaried(
-                                   new Commissioned(
-                                     new CashBonus(
-                                       new ForfeitDeductor(
-                                         new TaxesDeductor(
-                                           new ...(null)
-                                         )
+        PayrollTerminals = new Weekly(
+                             new Monthly(
+                               new Salaried(
+                                 new Commissioned(
+                                   new CashBonus(
+                                     new ForfeitDeductor(
+                                       new TaxesDeductor(
+                                         new ...(null)
                                        )
                                      )
                                    )
                                  )
-                               );
-
+                               )
+                             );
     }
 
     public void Calculate()
@@ -274,7 +269,7 @@ public class PayrollDepartment
 ```
 
 *Паша*. Да какой там low-coupling, ведь при добавлении нового дериватива, ты должен
-перекомпилировать и задеплоить весь PayrollDepartment с Employee впридачу.
+перекомпилировать и задеплоить весь PayrollDepartment с Employee в придачу.
 
 *Витя*. А при помощи Моста мы могли добавлять новые деривативы, не меняя ничего,
 кроме фабрики, которая создает объект Employee.
