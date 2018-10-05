@@ -74,7 +74,7 @@ public class Weekly : Scheduler
 {
     protected override bool DoHandle(Payroll payroll)
     {
-        //some paycheck handling
+        <!--some paycheck handling-->
         return true;
     }
 }
@@ -83,7 +83,7 @@ public class Biweekly : Scheduler
 {
     protected override bool DoHandle(Payroll payroll)
     {
-        //some paycheck handling
+        <!--some paycheck handling-->
         return true;
     }
 }
@@ -96,7 +96,7 @@ public class Salary : PaymentType
 {
     protected override bool DoHandle(Payroll payroll)
     {
-        //some paycheck handling
+        <!--some paycheck handling-->
         return true;
     }
 }
@@ -105,7 +105,7 @@ public class Commission : PaymentType
 {
     protected override bool DoHandle(Payroll payroll)
     {
-        //some paycheck handling
+        <!--some paycheck handling-->
         return true;
     }
 }
@@ -118,7 +118,7 @@ public class CashBonus : Bonus
 {
     protected override bool DoHandle(Payroll payroll)
     {
-        //some paycheck handling
+        <!--some paycheck handling-->
         return true;
     }
 }
@@ -212,7 +212,7 @@ public class Salaried : PayrollTerminal
     {
         if (payroll.Employee.Type == Employee.PaymentType.Salaried)
         {
-            //do some paycheck handling
+            <!--some paycheck handling-->
         }
         return true;
     }
