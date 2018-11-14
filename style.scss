@@ -242,6 +242,7 @@ nav {
 //
 
 .posts > .post {
+  text-align: justify;
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
@@ -251,9 +252,7 @@ nav {
   border-bottom: none;
 }
 
-.post {
-  text-align: justify;
-	
+.post {	
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
