@@ -14,4 +14,4 @@ I’m fascinated by coding, design, user experience, unit testing, and continual
 
 ### Get In Touch
 
-Concerns, critique, ideas, objections, wishes or anything else you wanna tell me – don't hesitate to e-mail me [irene.butakova@gmail.com](mailto:irene.butakova@gmail.com), I’ll try to get back asap. Questions, comments are also welcome.
+Concerns, critique, ideas, objections, wishes or anything else you wanna tell me – don't hesitate to e-mail me [allegr12@gmail.com](mailto:allegr12@gmail.com), I’ll try to get back asap. Questions, comments are also welcome.
