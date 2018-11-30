@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Question marks inside black diamonds
+title: A quick look at question marks inside black diamonds
 ---
 Навеяно дискуссиями в группе...
 
