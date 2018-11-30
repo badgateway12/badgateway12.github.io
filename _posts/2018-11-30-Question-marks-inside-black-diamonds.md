@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+title: Question marks inside black diamonds
 ---
 Навеяно дискуссиями в группе...
 
